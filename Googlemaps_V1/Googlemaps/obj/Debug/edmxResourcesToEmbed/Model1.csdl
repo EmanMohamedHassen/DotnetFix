@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="POC_gmapsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="POC_gmapsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SchoolInfoes" EntityType="POC_gmapsModel.SchoolInfo" />
+  </EntityContainer>
+  <EntityType Name="SchoolInfo">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+    </Key>
+    <Property Name="SchoolId" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SchoolName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeoLocation" Type="Geography" />
+  </EntityType>
+</Schema>

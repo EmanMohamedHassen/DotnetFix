@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="POC_gmapsModelStoreContainer" CdmEntityContainer="POC_gmapsEntities">
+    <EntitySetMapping Name="SchoolInfoes">
+      <EntityTypeMapping TypeName="POC_gmapsModel.SchoolInfo">
+        <MappingFragment StoreEntitySet="SchoolInfo">
+          <ScalarProperty Name="GeoLocation" ColumnName="GeoLocation" />
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="SchoolId" ColumnName="SchoolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
